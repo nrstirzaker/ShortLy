@@ -2,14 +2,31 @@
   "name": "shortly",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "server.cjs",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.cjs",
+    "test:e2e": "nightwatch tests/e2e/*",
+    "test:unit": "nightwatch src/**/__tests__/*",
+    "tailwind:css": "postcss public/tailwind.css -o public/style.css"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "autoprefixer": "^10.4.20",
+    "ejs": "^3.1.10",
     "express": "^4.21.0",
-    "nodemon": "^3.1.7"
+    "nodemon": "^3.1.7",
+    "postcss": "^8.4.47",
+    "postcss-cli": "^11.0.0",
+    "tailwindcss": "^3.4.12"
+  },
+  "devDependencies": {
+    "@nightwatch/vue": "^3.1.1",
+    "chromedriver": "^126.0.2",
+    "geckodriver": "^4.4.1",
+    "nightwatch": "^3.6.3",
+    "ts-node": "^10.9.2"
   }
 }
