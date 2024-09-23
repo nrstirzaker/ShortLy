@@ -553,11 +553,11 @@ input:focus {
 .mb-4 {
   margin-bottom: 1rem;
 }
-.ml-4 {
-  margin-left: 1rem;
+.ml-2 {
+  margin-left: 0.5rem;
 }
-.mr-4 {
-  margin-right: 1rem;
+.mr-2 {
+  margin-right: 0.5rem;
 }
 .flex {
   display: flex;
@@ -565,14 +565,20 @@ input:focus {
 .table {
   display: table;
 }
-.w-1\/2 {
+.w-2\/12 {
+  width: 16.666667%;
+}
+.w-2\/4 {
   width: 50%;
 }
-.w-1\/4 {
+.w-3\/12 {
   width: 25%;
 }
-.w-3\/4 {
-  width: 75%;
+.w-4\/12 {
+  width: 33.333333%;
+}
+.w-6\/12 {
+  width: 50%;
 }
 .table-fixed {
   table-layout: fixed;
@@ -587,4 +593,11 @@ input:focus {
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+.pl-3 {
+  padding-left: 0.75rem;
+}
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
